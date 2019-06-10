@@ -1,7 +1,5 @@
 source $VIMRUNTIME/vimrc_example.vim
 
-execute pathogen#infect()
-
 set nocompatible
 set nobackup
 set nowritebackup
