@@ -1,3 +1,21 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+"call vundle#begin('~/some/path/here')
+
+Plugin 'VundleVim/Vundle.vim'
+
+" plugin from http://vim-scripts.org/vim/scripts.html
+
+Plugin 'kien/ctrlp.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+
 source $VIMRUNTIME/vimrc_example.vim
 
 set nocompatible
@@ -5,6 +23,7 @@ set nobackup
 set nowritebackup
 set ignorecase
 set smartcase
+set noswapfile
 
 let mapleader=","
 
@@ -16,7 +35,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-set tabstop=8 softtabstop=3 shiftwidth=3 noexpandtab
+set tabstop=4
 set noundofile
 
 set diffexpr=MyDiff()
@@ -52,4 +71,3 @@ function MyDiff()
     let &shellxquote=l:shxq_sav
   endif
 endfunction
-
