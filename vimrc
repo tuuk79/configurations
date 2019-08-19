@@ -24,6 +24,7 @@ set nowritebackup
 set ignorecase
 set smartcase
 set noswapfile
+set rnu
 
 let mapleader=","
 
