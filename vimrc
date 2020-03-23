@@ -1,22 +1,11 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-"call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'
-
-" plugin from http://vim-scripts.org/vim/scripts.html
-
 Plugin 'kien/ctrlp.vim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-
-
-source $VIMRUNTIME/vimrc_example.vim
+call vundle#end()
 
 set nocompatible
 set nobackup
@@ -25,6 +14,9 @@ set ignorecase
 set smartcase
 set noswapfile
 set rnu
+filetype off
+set tabstop=4
+set noundofile
 
 let mapleader=","
 
@@ -36,10 +28,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-set tabstop=4
-set noundofile
+source $VIMRUNTIME/vimrc_example.vim
 
-set diffexpr=MyDiff()
+if &diffopt !~# 'internal'
+  set diffexpr=MyDiff()
+endif
 function MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
