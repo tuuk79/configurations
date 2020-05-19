@@ -4,7 +4,7 @@ set nowrap
 set smartcase
 set noswapfile
 set nobackup
-set ignorecaes
+set ignorecase
 set shiftwidth=4
 set tabstop=4 softtabstop=4
 
