@@ -11,7 +11,6 @@ set tabstop=4 softtabstop=4
 call plug#begin('~/.vim/plugged')
 
 Plug 'git@github.com:kien/ctrlp.vim.git'
-Plug 'git@github.com:Valloric/YouCompleteMe.git'
 
 call plug#end()
 
@@ -24,5 +23,3 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-source $VIMRUNTIME/vimrc_example.vim
