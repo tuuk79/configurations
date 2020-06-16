@@ -17,7 +17,6 @@ call plug#end()
 
 let mapleader=","
 
-nnoremap gp :silent %!prettier --stdin --stdin-filepath % --trailing-comma all --single-quote<CR>
 nnoremap <leader><space> :CtrlP<enter>
 nnoremap <leader><leader> :Explore<enter>
 nnoremap <C-J> <C-W><C-J>
