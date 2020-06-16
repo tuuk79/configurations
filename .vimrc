@@ -10,7 +10,8 @@ set tabstop=4 softtabstop=4
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'git@github.com:kien/ctrlp.vim.git'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'prettier/vim-prettier'
 
 call plug#end()
 
