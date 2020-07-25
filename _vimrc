@@ -12,10 +12,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'prettier/vim-prettier'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
 let mapleader=","
+
+let g:user_emmet_leader_key=','
 
 nnoremap <leader><space> :CtrlP<enter>
 nnoremap <leader><leader> :Explore<enter>
