@@ -1,1 +1,1 @@
-# terminal configuration files for various operating systems and shells
+# configuration files for various operating systems and shells
