@@ -30,7 +30,6 @@ Plug 'nvim-tree/nvim-tree.lua'
 call plug#end()
 
 lua require('init')
-lua require('Comment').setup()
 
 let mapleader=","
 
