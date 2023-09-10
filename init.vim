@@ -23,10 +23,14 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'numToStr/Comment.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
 
 lua require('init')
+lua require('Comment').setup()
 
 let mapleader=","
 
@@ -41,3 +45,5 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 nnoremap <leader>p :Prettier<CR>
+
+nnoremap <leader>t :NvimTreeToggle<CR>
